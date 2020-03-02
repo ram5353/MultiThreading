@@ -4,9 +4,13 @@ public class Main {
 
     public static void main(String[] args) {
 	// write your code here
+        System.out.println(Thread.currentThread().getName());
         MyThread obj = new MyThread();
         obj.start();
+        obj.setName("First Thread");
+        System.out.println(obj.getName());
         System.out.println("Main Thread");
+
     }
 }
 
