@@ -8,6 +8,7 @@ public class ThreadPriorites {
         r.start();
 
         //default main thread priority = 5
+        //priority range -> 1-10
         Thread.currentThread().setPriority(7);
         System.out.println(Thread.currentThread().getPriority());
 
